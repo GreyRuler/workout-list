@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+[class^=material-] {
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.material-icons {
+    font-family: 'Material Icons', serif;
+    font-size: 2rem; /* Preferred icon size */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined', serif;
+    font-size: 2rem;  /* Preferred icon size */
 }
 
-.App-link {
-  color: #61dafb;
+.workout {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9fff8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.workout-form {
+    padding: 1rem;
+    border-radius: .25rem;
+    background-color: #7fffd4;
+    margin-bottom: 1rem;
+}
+
+.workout-form > * {
+    background-color: #00d4a4;
+    padding: .5rem .75rem;
+    border-radius: .25rem;
+    border: 1px solid #00d4a4;
+}
+
+.workout-form > *:focus {
+    border: 1px solid #00332b;
+    outline: none;
+}
+
+.workout-form > *:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.workout-list {
+
 }
